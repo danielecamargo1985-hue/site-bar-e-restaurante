@@ -1,0 +1,591 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bar e Restaurante em Leme SP | Sabores e Encontros</title>
+  <meta name="description"
+    content="O melhor Bar e Restaurante em Leme SP! Almoço executivo, happy hour, chopp gelado, espaço pet friendly e opções veganas no Jardim do Bosque.">
+  <link rel="canonical" href="https://barerestaurante.site/">
+  <meta property="og:title" content="Bar e Restaurante em Leme SP | Sabores e Encontros">
+  <meta property="og:description"
+    content="O melhor Bar e Restaurante em Leme SP! Almoço executivo, happy hour, chopp gelado, espaço pet friendly e opções veganas no Jardim do Bosque.">
+  <meta property="og:image" content="https://barerestaurante.site/assets/img/hero-bg.webp">
+  <meta property="og:url" content="https://barerestaurante.site/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bar e Restaurante em Leme SP | Sabores e Encontros">
+  <meta name="twitter:description"
+    content="O melhor Bar e Restaurante em Leme SP! Almoço executivo, happy hour, chopp gelado, espaço pet friendly e opções veganas no Jardim do Bosque.">
+  <meta name="twitter:image" content="https://barerestaurante.site/assets/img/hero-bg.webp">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- SEO JSON-LD Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://barerestaurante.site/#organization",
+        "name": "Bar e Restaurante",
+        "url": "https://barerestaurante.site/",
+        "logo": "https://barerestaurante.site/assets/img/sobre.webp",
+        "sameAs": []
+      },
+      {
+        "@type": "Restaurant",
+        "@id": "https://barerestaurante.site/#restaurant",
+        "name": "Bar e Restaurante",
+        "image": "https://barerestaurante.site/assets/img/hero-bg.webp",
+        "url": "https://barerestaurante.site/",
+        "telephone": "+5519992130956",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Carlos Fatuto, 160 - Jardim do Bosque",
+          "addressLocality": "Leme",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "11:00",
+          "closes": "23:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+          "@type": "City",
+          "name": "Leme"
+        },
+        "hasMap": "https://maps.google.com/?q=Rua+Carlos+Fatuto,+160+-+Jardim+do+Bosque,+Leme+-+SP",
+        "parentOrganization": {
+          "@id": "https://barerestaurante.site/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://barerestaurante.site/#website",
+        "url": "https://barerestaurante.site/",
+        "name": "Bar e Restaurante",
+        "publisher": {
+          "@id": "https://barerestaurante.site/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://barerestaurante.site/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qual o melhor restaurante para almoçar em Leme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O Bar e Restaurante é referência no Jardim do Bosque com pratos frescos e variados."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O restaurante aceita pets?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim, somos um espaço totalmente Pet Friendly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Onde fazer happy hour para empresas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oferecemos estrutura climatizada e pacotes personalizados para confraternizações."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://barerestaurante.site/#services",
+        "itemListElement": [
+          {
+            "@type": "Service",
+            "name": "Almoço Executivo em Leme SP",
+            "description": "Pratos balanceados, saborosos e com apresentação impecável para o seu dia a dia.",
+            "provider": {
+              "@id": "https://barerestaurante.site/#restaurant"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Leme"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Happy Hour e Comida de Boteco",
+            "description": "Relaxe após o expediente com nossas porções premiadas e drinks artesanais.",
+            "provider": {
+              "@id": "https://barerestaurante.site/#restaurant"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Leme"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Espaço para Eventos Corporativos",
+            "description": "Estrutura completa e climatizada para confraternizações e reuniões empresariais.",
+            "provider": {
+              "@id": "https://barerestaurante.site/#restaurant"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Leme"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://barerestaurante.site/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://barerestaurante.site/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body x-data="{ mobileMenu: false }">
+
+  <!-- TOP BAR (New based on reference) -->
+  <div class="bg-primary text-white text-sm py-2">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div><i class="fas fa-map-marker-alt mr-2 text-secondary-light"></i>Rua Carlos Fatuto, 160 - Jardim do Bosque
+      </div>
+      <div class="hidden sm:flex gap-4">
+        <a href="tel:+5519992130956" class="hover:text-secondary-light"><i class="fas fa-phone mr-2"></i>(19)
+          99213-0956</a>
+        <span><i class="fas fa-clock mr-2 text-secondary-light"></i>Seg a Sáb: 11h às 23h</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar sticky top-0" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+      <a href="#inicio" class="flex-shrink-0 text-2xl font-bold font-heading text-primary-dark">
+        Bar &amp; Restaurante
+      </a>
+      <div class="hidden lg:flex gap-8 items-center">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#diferenciais" class="nav-link">Diferenciais</a>
+        <a href="#depoimentos" class="nav-link">Avaliações</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </div>
+      <a href="https://wa.me/5519992130956" class="btn btn-primary hidden lg:inline-flex shadow-md">Fazer Reserva</a>
+      <button @click="mobileMenu = !mobileMenu" class="lg:hidden p-2 text-primary-dark"><i
+          class="fas fa-bars text-2xl"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO OVERLAP DESIGN -->
+  <section id="inicio" class="hero-wrapper pb-16 md:pb-0 relative">
+    <img src="/assets/img/hero-bg.webp" alt="Fachada e interior do Bar e Restaurante no Jardim do Bosque em Leme SP"
+      class="hero-image">
+    <div class="hero-inner w-full">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl text-white">
+          <h1 class="mb-4 text-white">Sabor e Tradição,<br>A Qualquer Hora.</h1>
+          <p class="mb-8 text-white/90 text-lg">De segunda a sábado, o melhor almoço executivo, chopp gelado e porções
+            de boteco no coração de Leme - SP.</p>
+          <div class="flex flex-wrap gap-4 hidden md:flex">
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-secondary"></i> Almoço
+              Executivo</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-secondary"></i> Happy Hour</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-secondary"></i> Eventos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlapping Booking Card -->
+    <div class="hero-floating-card relative z-20 mx-4 md:mx-auto mt-[-4rem] md:absolute md:top-auto md:bottom-[-4rem]">
+      <div class="flex-1">
+        <div class="text-sm font-bold text-primary mb-1 uppercase tracking-wide">Faça sua reserva</div>
+        <h2 class="mb-2">Garanta sua mesa conosco</h2>
+        <p class="text-sm">Ambiente climatizado e pet friendly no Jardim do Bosque.</p>
+      </div>
+      <div class="flex-shrink-0 w-full md:w-auto">
+        <a href="https://wa.me/5519992130956" class="btn btn-primary w-full shadow-md py-3 px-8 justify-center">Reservar
+          pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACING FOR OVERLAP -->
+  <div class="h-8 md:h-24"></div>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 relative">
+          <img src="/assets/img/sobre.webp" alt="Ambiente interno confortável e acolhedor do nosso restaurante em Leme"
+            class="rounded-2xl w-full object-cover h-[500px] shadow-lg">
+          <div
+            class="absolute -top-6 -right-6 w-32 h-32 bg-white rounded-full flex items-center justify-center p-2 shadow-lg hidden md:flex">
+            <div
+              class="w-full h-full bg-primary-100 rounded-full flex flex-col items-center justify-center border-4 border-white text-center">
+              <span class="text-2xl font-bold text-primary">Est.</span>
+              <span class="text-sm font-bold text-primary-dark">2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="badge-section">Nossa Essência</div>
+          <h2 class="mb-6">O melhor lugar onde comer em Leme com conforto</h2>
+          <p class="mb-4">Localizado no coração do Jardim do Bosque, nascemos da paixão por reunir pessoas ao redor de
+            uma boa mesa. Nosso espaço foi pensado para proporcionar uma experiência completa e acolhedora.</p>
+          <div class="grid grid-cols-2 gap-6 mt-8">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-primary-50 flex items-center justify-center text-primary text-xl"><i
+                  class="fas fa-paw"></i></div>
+              <div class="font-bold text-sm">Pet Friendly</div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-primary-50 flex items-center justify-center text-primary text-xl"><i
+                  class="fas fa-snowflake"></i></div>
+              <div class="font-bold text-sm">Climatizado</div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-primary-50 flex items-center justify-center text-primary text-xl"><i
+                  class="fas fa-leaf"></i></div>
+              <div class="font-bold text-sm">Opções Veganas</div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-primary-50 flex items-center justify-center text-primary text-xl"><i
+                  class="fas fa-beer"></i></div>
+              <div class="font-bold text-sm">Chopp Gelado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS (CARDS) -->
+  <section id="servicos" class="section-padding bg-alt">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="badge-section">Cardápio &amp; Serviços</div>
+        <h2>Do Almoço Executivo ao Happy Hour</h2>
+        <p class="mt-4">Nossa cozinha é especializada em entregar sabor e qualidade em cada prato servido, desde o dia a
+          dia até grandes eventos.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Card 1 -->
+        <div class="service-card">
+          <img src="/assets/img/servico-almoco.webp"
+            alt="Prato de almoço executivo bem servido com ingredientes frescos" class="service-img">
+          <div class="service-content">
+            <div class="service-icon-wrap"><i class="fas fa-utensils text-xl"></i></div>
+            <h3 class="mb-3">Almoço Executivo</h3>
+            <p class="text-sm mb-4">Pratos deliciosos e bem apresentados para o seu dia a dia, de segunda a sábado.</p>
+            <a href="#contato"
+              class="mt-auto text-primary font-bold text-sm hover:underline flex items-center gap-2">Saber Mais <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="service-card">
+          <img src="/assets/img/servico-happy.webp" alt="Amigos brindando com chopp gelado durante o happy hour"
+            class="service-img">
+          <div class="service-content">
+            <div class="service-icon-wrap"><i class="fas fa-beer-mug-empty text-xl"></i></div>
+            <h3 class="mb-3">Happy Hour &amp; Porções</h3>
+            <p class="text-sm mb-4">Chopp super gelado, drinks artesanais e as melhores porções de comida de boteco da
+              região.</p>
+            <a href="#contato"
+              class="mt-auto text-primary font-bold text-sm hover:underline flex items-center gap-2">Saber Mais <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="service-card">
+          <img src="/assets/img/servico-eventos.webp" alt="Mesa decorada para eventos corporativos e confraternizações"
+            class="service-img">
+          <div class="service-content">
+            <div class="service-icon-wrap"><i class="fas fa-champagne-glasses text-xl"></i></div>
+            <h3 class="mb-3">Espaço para Eventos</h3>
+            <p class="text-sm mb-4">Ambiente ideal para atividades corporativas e confraternizações. Pacotes
+              personalizados.</p>
+            <a href="#contato"
+              class="mt-auto text-primary font-bold text-sm hover:underline flex items-center gap-2">Saber Mais <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center"><a href="#contato" class="btn btn-primary px-8 py-3">Ver Cardápio Completo</a></div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS (4 Circles like reference) -->
+  <section id="diferenciais" class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="badge-section">Por que nos escolher</div>
+        <h2>Um Restaurante Pet Friendly e Inclusivo</h2>
+      </div>
+
+      <div class="circle-grid">
+        <div class="circle-item">
+          <div class="circle-icon-lg"><i class="fas fa-paw"></i></div>
+          <h3 class="mb-2">Pet Friendly</h3>
+          <p class="text-sm">Traga seu melhor amigo com total segurança.</p>
+        </div>
+        <div class="circle-item">
+          <div class="circle-icon-lg"><i class="fas fa-snowflake"></i></div>
+          <h3 class="mb-2">Climatizado</h3>
+          <p class="text-sm">Conforto térmico em todas as estações.</p>
+        </div>
+        <div class="circle-item">
+          <div class="circle-icon-lg"><i class="fas fa-leaf"></i></div>
+          <h3 class="mb-2">Opção Vegana</h3>
+          <p class="text-sm">Cardápio com respeito à sua dieta.</p>
+        </div>
+        <div class="circle-item">
+          <div class="circle-icon-lg"><i class="fas fa-star"></i></div>
+          <h3 class="mb-2">Qualidade</h3>
+          <p class="text-sm">Apresentação impecável em cada prato.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL WIDTH BANNER/EVENTOS (like Video section) -->
+  <section id="eventos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-10">
+    <div class="banner-section bg-primary relative">
+      <img src="/assets/img/eventos.webp"
+        alt="Amplo espaço preparado para grandes eventos e festas de aniversário no bar e restaurante"
+        class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-multiply">
+      <div class="relative z-10 text-center text-white p-8 max-w-3xl">
+        <h2 class="text-white mb-4">Eventos Corporativos e Confraternizações</h2>
+        <p class="text-white/80 mb-8 text-lg">Faça seu happy hour da empresa ou reunião familiar conosco. Ambiente
+          incrível e chopp bem tirado garantidos.</p>
+        <a href="https://wa.me/5519992130956" class="btn bg-white text-primary font-bold hover:bg-gray-100">Agendar
+          Evento <i class="fab fa-whatsapp ml-2 text-lg"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="section-padding bg-alt">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="badge-section">Prova Social</div>
+        <h2>O que dizem sobre o melhor chopp de Leme</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="testimonial-card">
+          <div class="text-secondary-light mb-4 text-lg">★★★★★</div>
+          <p class="text-sm italic mb-6">"Melhor almoço executivo de Leme! Os pratos são muito bem preparados e o
+            ambiente climatizado é incrível."</p>
+          <div class="font-bold text-primary-dark">Carlos M.</div>
+          <div class="text-xs text-text-light">Guia Local</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="text-secondary-light mb-4 text-lg">★★★★★</div>
+          <p class="text-sm italic mb-6">"Lugar incrível para happy hour! O chopp é perfeitamente gelado e adoro poder
+            levar meu cachorro lá."</p>
+          <div class="font-bold text-primary-dark">Amanda R.</div>
+          <div class="text-xs text-text-light">Cliente Frequente</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="text-secondary-light mb-4 text-lg">★★★★★</div>
+          <p class="text-sm italic mb-6">"Fizemos a confraternização da empresa aqui e foi perfeito! Atendimento
+            impecável, cardápio excelente."</p>
+          <div class="font-bold text-primary-dark">Roberto S.</div>
+          <div class="text-xs text-text-light">Empresário</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ & CONTATO -->
+  <section id="faq" class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+
+        <!-- FAQ Accordion (Left) -->
+        <div>
+          <div class="badge-section">Tire suas dúvidas</div>
+          <h2 class="mb-8">Perguntas Frequentes</h2>
+
+          <div class="space-y-4" x-data="{ selected: 1 }">
+            <div class="border border-border rounded-lg overflow-hidden bg-white">
+              <button @click="selected !== 1 ? selected = 1 : selected = null"
+                class="w-full flex justify-between items-center p-5 text-left font-bold text-primary-dark hover:bg-gray-50 transition-colors">
+                <span>O restaurante aceita pets?</span>
+                <i class="fas" :class="selected == 1 ? 'fa-minus text-primary' : 'fa-plus text-gray-400'"></i>
+              </button>
+              <div x-show="selected == 1" x-collapse>
+                <div class="p-5 pt-0 text-sm text-text-light">Sim! Somos um estabelecimento totalmente Pet Friendly. Seu
+                  melhor amigo é muito bem-vindo em nosso espaço.</div>
+              </div>
+            </div>
+            <div class="border border-border rounded-lg overflow-hidden bg-white">
+              <button @click="selected !== 2 ? selected = 2 : selected = null"
+                class="w-full flex justify-between items-center p-5 text-left font-bold text-primary-dark hover:bg-gray-50 transition-colors">
+                <span>Quais são as opções veganas no cardápio?</span>
+                <i class="fas" :class="selected == 2 ? 'fa-minus text-primary' : 'fa-plus text-gray-400'"></i>
+              </button>
+              <div x-show="selected == 2" x-collapse>
+                <div class="p-5 pt-0 text-sm text-text-light">Oferecemos diversas opções vegetarianas e veganas
+                  saborosas, todas preparadas com o mesmo padrão de qualidade.</div>
+              </div>
+            </div>
+            <div class="border border-border rounded-lg overflow-hidden bg-white">
+              <button @click="selected !== 3 ? selected = 3 : selected = null"
+                class="w-full flex justify-between items-center p-5 text-left font-bold text-primary-dark hover:bg-gray-50 transition-colors">
+                <span>É necessário fazer reserva para o almoço?</span>
+                <i class="fas" :class="selected == 3 ? 'fa-minus text-primary' : 'fa-plus text-gray-400'"></i>
+              </button>
+              <div x-show="selected == 3" x-collapse>
+                <div class="p-5 pt-0 text-sm text-text-light">Para o dia a dia não é obrigatório. Para grupos maiores e
+                  eventos, recomendamos reservar pelo WhatsApp.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Informações Contato (Right) -->
+        <div id="contato" class="bg-primary-50 rounded-2xl p-8 lg:p-12">
+          <h2 class="mb-8">Contato &amp; Localização</h2>
+          <div class="space-y-6 mb-8">
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <div class="font-bold text-primary-dark mb-1">Endereço</div>
+                <p class="text-sm">Rua Carlos Fatuto, 160<br>Jardim do Bosque, Leme - SP</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <div class="font-bold text-primary-dark mb-1">Horário</div>
+                <p class="text-sm">Segunda a Sábado, das 11h às 23h</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div>
+                <div class="font-bold text-primary-dark mb-1">WhatsApp / Reserva</div>
+                <a href="https://wa.me/5519992130956" class="text-sm font-bold text-primary hover:underline">(19)
+                  99213-0956</a>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/5519992130956" class="btn btn-primary w-full py-3 justify-center text-lg">Mandar
+            Mensagem</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer pt-16 pb-8 border-t border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="col-span-1 md:col-span-1">
+          <div class="text-2xl font-bold font-heading text-primary-dark mb-4">Bar &amp; Restaurante</div>
+          <p class="text-sm text-text-light pr-4">O melhor lugar onde comer em Leme SP com conforto, opções veganas e
+            chopp perfeitamente gelado.</p>
+          <div class="flex gap-4 mt-6">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm hover:bg-primary hover:text-white"><i
+                class="fab fa-instagram"></i></a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm hover:bg-primary hover:text-white"><i
+                class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <div class="font-bold text-primary-dark mb-4 tracking-wide uppercase text-sm">Navegação Ráspida</div>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Nossa História</a></li>
+            <li><a href="#servicos">Almoço Executivo &amp; Porções</a></li>
+            <li><a href="#diferenciais">Diferenciais (Pet Friendly)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-bold text-primary-dark mb-4 tracking-wide uppercase text-sm">Institucional</div>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#eventos">Eventos e Reservas</a></li>
+            <li><a href="#depoimentos">Avaliações</a></li>
+            <li><a href="#faq">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-bold text-primary-dark mb-4 tracking-wide uppercase text-sm">Contato Local</div>
+          <div class="text-sm text-text-light mb-4">Leme - SP<br>Jardim do Bosque</div>
+          <a href="https://wa.me/5519992130956"
+            class="btn btn-outline border-border bg-white w-full flex justify-center py-2 text-primary-dark"><i
+              class="fab fa-whatsapp mr-2 text-green-500"></i> Fale Conosco</a>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-text-light">
+        <p>&copy; 2026 Bar e Restaurante Sabores &amp; Encontros. Todos os direitos reservados.</p>
+        <div class="mt-4 md:mt-0 space-x-4">
+          <a href="#">Termos</a>
+          <a href="#">Privacidade</a>
+          <span>Criado por OFS Digital</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5519992130956" class="whatsapp-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
